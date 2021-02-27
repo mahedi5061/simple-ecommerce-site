@@ -12,3 +12,17 @@
 .totalCount{
     margin-left:40px; 
 }
+.confirm-order{
+    background-color:chocolate;
+    color: black;
+    padding:5px;
+    width:170px;
+    height:30px;
+    border:1px solid whitesmoke;
+    font-size:15px;
+    border-radius:5px
+}
+.confirm-order:hover{
+    color:white;
+    font-size:15px;
+}
