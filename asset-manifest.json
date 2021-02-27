@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/simple-ecommerce-site/static/css/main.9b2c6379.chunk.css",
+    "main.js": "/simple-ecommerce-site/static/js/main.13010141.chunk.js",
+    "main.js.map": "/simple-ecommerce-site/static/js/main.13010141.chunk.js.map",
+    "runtime-main.js": "/simple-ecommerce-site/static/js/runtime-main.b3fd806f.js",
+    "runtime-main.js.map": "/simple-ecommerce-site/static/js/runtime-main.b3fd806f.js.map",
+    "static/js/2.1e9e92b9.chunk.js": "/simple-ecommerce-site/static/js/2.1e9e92b9.chunk.js",
+    "static/js/2.1e9e92b9.chunk.js.map": "/simple-ecommerce-site/static/js/2.1e9e92b9.chunk.js.map",
+    "static/js/3.06f31fde.chunk.js": "/simple-ecommerce-site/static/js/3.06f31fde.chunk.js",
+    "static/js/3.06f31fde.chunk.js.map": "/simple-ecommerce-site/static/js/3.06f31fde.chunk.js.map",
+    "index.html": "/simple-ecommerce-site/index.html",
+    "static/css/main.9b2c6379.chunk.css.map": "/simple-ecommerce-site/static/css/main.9b2c6379.chunk.css.map",
+    "static/js/2.1e9e92b9.chunk.js.LICENSE.txt": "/simple-ecommerce-site/static/js/2.1e9e92b9.chunk.js.LICENSE.txt",
+    "static/media/logo.0dd9a510.png": "/simple-ecommerce-site/static/media/logo.0dd9a510.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b3fd806f.js",
+    "static/js/2.1e9e92b9.chunk.js",
+    "static/css/main.9b2c6379.chunk.css",
+    "static/js/main.13010141.chunk.js"
+  ]
+}
