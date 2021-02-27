@@ -7,4 +7,8 @@
 }
 .summery-container{
     margin-left:40px;
+    border-bottom: 1px solid lightgray;
+}
+.totalCount{
+    margin-left:40px; 
 }
