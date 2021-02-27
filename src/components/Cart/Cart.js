@@ -26,7 +26,7 @@ const Cart = (props) => {
             <h4>Tax + VAT: ${tax}</h4>   
         </div>
         <h4 className='totalCount'>Total Price: ${totalPrice}</h4>
-        <button className="confirm-order totalCount">Confirm Order</button>
+        <button className="confirm-order totalCount">Review Order</button>
        </div>
         
     );
