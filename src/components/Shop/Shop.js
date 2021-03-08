@@ -25,11 +25,11 @@ const Shop = () => {
                 sameProduct.quantity=1;
                 newCart=[...cart,product];
             }
+            setCart(newCart);
+
+            addToDatabaseCart(product.key,count);
         }
-        setCart(newCart);
-        
-        addToDatabaseCart(product.key,count);
-    }
+       
     return (
         <div className="shop-container">
             <div className="product-container">
