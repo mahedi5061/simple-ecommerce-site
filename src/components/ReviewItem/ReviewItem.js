@@ -11,7 +11,7 @@ const ReviewItem = (props) => {
         <div className="productItem">
              <img src={img} alt=''/>
            <h2 className="product-name">{name}</h2>
-           <p className="product-common">Quantity: {quantity.length}</p>
+           <p className="product-common">Quantity: {quantity}</p>
            <br></br>
            <button className="product-common btn" onClick={() =>props.removeProduct(key)}>Remove Order</button>
              

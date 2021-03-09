@@ -1,28 +1,38 @@
 import React from 'react';
 import fakeData from '../../fakeData';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import './Shop.css';
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
-import { addToDatabaseCart } from '../../utilities/databaseManager';
+import { addToDatabaseCart, getDatabaseCart } from '../../utilities/databaseManager';
 
 const Shop = () => {
     const first20 = fakeData.slice(0, 20);
     const [products, setproducts] = useState(first20);
     const [cart, setCart] = useState([]);
+    useEffect(() => {
+        const saveCart = getDatabaseCart();
+        const productKey = Object.keys(saveCart);
+         const previousCart=productKey.map(existingKey =>{
+             const product =fakeData.find(pd=>pd.key === existingKey);
+             product.quantity=saveCart[existingKey];
+             return product;
+         })
+         setCart(previousCart);
+    }, [])
     const addEventHandler=(product)=>{
-        const toBeAdded =product.key;
-        const sameProduct=cart.find(pd=>pd.key===toBeAdded);
+        const toBeAddedKey =product.key;
+        const sameProduct=cart.find(pd=>pd.key===toBeAddedKey);
         let count =1;
         let newCart;
         if(sameProduct){
             count=sameProduct.quantity + 1;
             sameProduct.quantity=count;
-            const others=cart.filter(pd=>pd.key!==toBeAdded);
+            const others=cart.filter(pd=>pd.key!==toBeAddedKey);
             newCart=[...others,sameProduct];
         }
             else{
-                sameProduct.quantity=1;
+                product.quantity=1;
                 newCart=[...cart,product];
             }
             setCart(newCart);
