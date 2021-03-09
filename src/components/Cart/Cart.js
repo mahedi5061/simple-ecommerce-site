@@ -2,6 +2,7 @@ import React from 'react';
 import './Cart.css';
 
 const Cart = (props) => {
+    console.log(props)
      
     const cart=props.cart;
     const total=cart.reduce((total,pd)=>(total+pd.price*pd.quantity),0);
@@ -28,7 +29,9 @@ const Cart = (props) => {
             <h4>Tax + VAT: ${tax}</h4>   
         </div>
         <h4 className='totalCount'>Total Price: ${totalPrice}</h4>
-        <button className="confirm-order totalCount">Review Order</button>
+        {
+            props.children
+        }
        </div>
         
     );
