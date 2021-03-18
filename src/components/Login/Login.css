@@ -1,0 +1,27 @@
+.login{
+    margin-left: 43%;
+    margin-top: 15px;
+}
+ .same-btn{
+     
+      margin-top: 15px;
+     padding:5px;
+     font-weight: bold;
+ }
+ .fb-btn{
+    margin-left: 15px;
+ }
+ .form-container{
+     padding:15px
+ }
+ .same-input{
+     margin-top: 10px;
+     padding:5px;
+ }
+ .same-input-field{
+    padding:7px;
+    padding-left: 35px;
+    border-radius: 7px;
+    
+     
+ }

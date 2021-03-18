@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import './Cart.css';
 
 const Cart = (props) => {
@@ -19,6 +20,7 @@ const Cart = (props) => {
     }
     let tax=(total*0.1).toFixed(2);
     let totalPrice=(total+shipping+Number(tax)).toFixed(2);
+      
     return (
         <div>
         <div className="summery-container">
@@ -29,6 +31,7 @@ const Cart = (props) => {
             <h4>Tax + VAT: ${tax}</h4>   
         </div>
         <h4 className='totalCount'>Total Price: ${totalPrice}</h4>
+        
         {
             props.children
         }
